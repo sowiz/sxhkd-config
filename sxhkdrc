@@ -2,10 +2,6 @@
 alt + t
     $TERMINAL
 
-# Maximize active window
-alt + m
-    wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
-
 # Next window
 alt + shift + {k,j}
     bash ~/.scripts/window-cycle {next,prev}
@@ -18,6 +14,10 @@ alt + d
 alt + {1,2,3,4,5,6,7,8,9}
     wmctrl -s {0,1,2,3,4,5,6,7,8}
 
+# Maximize window
+alt + m
+    wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
+
 # Close window
 alt + q
     wmctrl -c :ACTIVE:
@@ -27,8 +27,8 @@ alt + {y,p}
     xvkbd -no-jump-pointer -xsendevent -text '\C{c,v}'
 
 # Numpad
-mode_switch + {a,q,s,d,f,w,e,r,j,i,o,p,m,n}
-    xvkbd -no-jump-pointer -xsendevent -text '{0,0,1,2,3,4,5,6,7,8,9,+,*,/}'
+mode_switch + {a,q,s,d,f,w,e,r,j,i,o,p,m,t,n,k}
+    xvkbd -no-jump-pointer -xsendevent -text '{0,0,1,2,3,4,5,6,7,8,9,+,-,*,/,\b}'
 
 # Shutdown
 alt + ctrl + x

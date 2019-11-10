@@ -22,6 +22,14 @@ alt + {1,2,3,4,5,6,7,8,9}
 alt + q
     wmctrl -c :ACTIVE:
 
+# Copy/Paste
+alt + {y,p}
+    xvkbd -no-jump-pointer -xsendevent -text '\C{c,v}'
+
+# Numpad
+mode_switch + {a,q,s,d,f,w,e,r,j,i,o,p,m,n}
+    xvkbd -no-jump-pointer -xsendevent -text '{0,0,1,2,3,4,5,6,7,8,9,+,*,/}'
+
 # Shutdown
 alt + ctrl + x
     poweroff

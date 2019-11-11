@@ -31,8 +31,8 @@ alt + {y,p}
     xvkbd -no-jump-pointer -xsendevent -text '\C{c,v}'
 
 # Numpad
-mode_switch + {a,q,s,d,f,w,e,r,j,i,o,p,m,t,n,BackSpace,k}
-    xvkbd -no-jump-pointer -xsendevent -text '{0,0,1,2,3,4,5,6,7,8,9,+,-,*,/,\b,\r}'
+mode_switch + {a,s,d,f,e,j,i,o,p,n,k,h,g,t,r,BackSpace,w}
+    xvkbd -no-jump-pointer -xsendevent -text '{1,2,3,4,5,6,7,8,9,0,.,+,-,*,/,\b,\r}'
 
 # `!"$%^&
 mode_switch + {z,2,3,4,x,c,v}
